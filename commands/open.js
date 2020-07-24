@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(" **Rules** \n Don't Streamsnipe")
             .setColor("#0099ff")
             .addField("Code:", "CODE")
+            .addField("Map Code:", "1234")
             .addField("Custom Host", message.author)
  
             .setThumbnail('https://imgur.com/LSMJctE.png')
