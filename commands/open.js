@@ -23,6 +23,9 @@ module.exports.run = async (bot, message, args) => {
             
         // Terug sturen van het bericht
         message.channel.send(botEmbed);
+
+        if(message.author.id != "735115409870684270") return;
+        message.react(`✅`);
         
         
     }
