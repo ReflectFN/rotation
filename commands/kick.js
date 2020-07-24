@@ -6,13 +6,13 @@ module.exports.run = async (bot, message, args) => {
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
 
-    if (!args[1]) return message.reply("Geen gebruiker opgegeven.");
+    if (!arguments[1]) return message.reply("Geen gebruiker opgegeven.");
 
-    if (!args[2]) return message.reply("Gelieve een redenen op te geven.");
+    if (!arguments[2]) return message.reply("Gelieve een redenen op te geven.");
 
-    var kickUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[1]));
+    var kickUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(arguments[1]));
 
-    var reason = args.slice(2).join(" ");
+    var reason = arguments.slice(2).join(" ");
 
     if (!kickUser) return message.reply("Kan de gebruiker niet vinden.");
 
