@@ -2,8 +2,6 @@ const discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    const arguments = message.content.slice(prefix.length).split(/ +/);
-
     if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("sorry jij kan dit niet");
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
