@@ -6,9 +6,9 @@ module.exports.run = async (bot, message, arguments) => {
 
     if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("Geen perms");
 
-    if (!arguments[1]) return message.reply("Geen gebruiker opgegeven.");
+    if (!arguments[0]) return message.reply("Geen gebruiker opgegeven.");
 
-    if (!arguments[2]) return message.reply("Gelieve een redenen op te geven.");
+    if (!arguments[1]) return message.reply("Gelieve een redenen op te geven.");
 
     var kickUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(arguments[1]));
 
