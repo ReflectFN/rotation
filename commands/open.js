@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
             
             
         // Verzend het bericht en voeg er reacties aan toe.
-    message.send(botEmbed).then(embedMessage => {
+    message.channel.send(botEmbed).then(embedMessage => {
         embedMessage.react('👍');
         embedMessage.react('👎');
     });
