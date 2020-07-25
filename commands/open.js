@@ -21,9 +21,16 @@ module.exports.run = async (bot, message, args) => {
         message.delete();
             
             
-        // Terug sturen van het bericht
-        message.channel.send(botEmbed);
-        message.react(`✅`);
+        // Vind het kanaal.
+        var openChannel = message.guild.channels.find(`name`, "open");
+    if (!openChannel) return message.guild.send("Kan het kanaal niet vinden");
+ 
+    // Verzend het bericht en voeg er reacties aan toe.
+    openChannel.send(botEmbed).then(embedMessage => {
+        embedMessage.react('👍');
+        embedMessage.react('👎');
+    });
+        
         
         
     }
