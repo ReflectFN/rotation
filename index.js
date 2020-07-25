@@ -34,7 +34,7 @@ bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is online`)
 
-    bot.user.setActivity("SOON....", {type: "PLAYING"});
+    bot.user.setActivity("Rotation Practise", {type: "PLAYING"});
 })
 
 
