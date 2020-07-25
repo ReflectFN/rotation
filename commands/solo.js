@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
  
         if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply("No Perms");
         message.delete();
-        embedMessage.react('✅');
+        
             
  
         // Terug sturen van het bericht
