@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("Map Code:", "8546-1628-3429")
             .addField("Custom Host", message.author)
  
-            .setThumbnail('https://imgur.com/LSMJctE.png')
+            .setThumbnail('https://imgur.com/3AYn0NE.png')
             .setImage('')
             .setTimestamp()
             .setFooter('Click ✅ If you are in Queue', 'https://imgur.com/s5FaM8T.png');
