@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
             .setTitle('Open Zonewars Host')
             .setDescription(" **Rules** \n Don't Streamsnipe")
             .setColor("#0099ff")
-            .addField("Code:", "CODE")
+            .addField("Code:", "game1open")
             .addField("Map Code:", "8546-1628-3429")
             .addField("Custom Host", message.author)
  
