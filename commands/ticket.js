@@ -66,7 +66,9 @@ module.exports.run = async (bot, message, args) => {
                     .setTimestamp()
  
                     settedParent.send(`<@${message.author.id}>`, embedParent)
-                    settedParent.send(`<@735135165931585628>`, embedParent)
+
+                    message.channel.send(`<@&735135165931585628>`);  
+    
 
                 }
             ).catch(err => {
