@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
             .setTitle('Arena Solo Custom')
             .setDescription(" **Rules** \n **YOU MAY** fight off spawn until there are 80 players alive. \n **DO NOT** fight or shoot at all until 2nd zone has fully closed. \n **DO NOT** Stream snipe/use anonymous or streamer mode. \n **DO NOT** grief players in any way until 2nd zone has fully closed. \n **YOU MAY** fight if storm surge occurs and you need damage, you \n are allowed to shoot until storm surge is over.")
             .setColor("#0099ff")
-            .addField("Code:", "CODE")
+            .addField("Code:", "firstgame2")
             .addField("Custom Host", message.author)
  
             .setThumbnail('https://imgur.com/LSMJctE.png')
